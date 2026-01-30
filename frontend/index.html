@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold Email Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📧 Cold Mail Generator</h1>
+            <p>Generate professional cold emails in seconds using AI.</p>
+        </header>
+        
+        <main>
+            <div class="input-group">
+                <label for="url">Job Posting URL</label>
+                <input type="url" id="url" placeholder="https://jobs.nike.com/job/..." value="https://jobs.nike.com/job/R-33460" required>
+            </div>
+            
+            <div class="row">
+                <div class="input-group">
+                    <label for="tone">Tone</label>
+                    <select id="tone">
+                        <option value="Professional">Professional</option>
+                        <option value="Friendly">Friendly</option>
+                        <option value="Persuasive">Persuasive</option>
+                        <option value="Witty">Witty</option>
+                    </select>
+                </div>
+                
+                <div class="input-group">
+                    <label for="cta">Call to Action</label>
+                    <input type="text" id="cta" placeholder="Book a meeting" value="Book a meeting">
+                </div>
+            </div>
+
+            <button id="generateBtn" onclick="generateEmail()">Generate Email</button>
+
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>Analyzing job description and crafting email...</p>
+            </div>
+
+            <div id="result" class="hidden">
+                <h2>Generated Email:</h2>
+                <div id="emailContent" class="email-box"></div>
+                <button onclick="copyToClipboard()" class="secondary-btn">Copy to Clipboard</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
