@@ -58,7 +58,7 @@ class Chain:
             {job_description}
 
             ### INSTRUCTION:
-            You are Mohan, a business development executive at AtliQ. AtliQ is an AI & Software Consulting company dedicated to facilitating
+            You are Ashwith Prabhu, a business development executive at AtliQ. AtliQ is an AI & Software Consulting company dedicated to facilitating
             the seamless integration of business processes through automated tools. 
             Over our experience, we have empowered numerous enterprises with tailored solutions, fostering scalability, 
             process optimization, cost reduction, and heightened overall efficiency. 
@@ -67,7 +67,7 @@ class Chain:
             The tone of the email should be: {tone}.
             The call to action should be: {call_to_action}.
             Also add the most relevant ones from the following links to showcase Atliq's portfolio: {link_list}
-            Remember you are Mohan, BDE at AtliQ. 
+            Remember you are Ashwith Prabhu, BDE at AtliQ. 
             Do not provide a preamble.
             ### EMAIL (NO PREAMBLE):
 
